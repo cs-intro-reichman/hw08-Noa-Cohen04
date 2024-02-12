@@ -93,9 +93,8 @@ class PlayList {
         if (i < 0 || size == maxSize || i > size) {
             return false;
         }
-        if (i==0){
-            tracks[0] = track;
-            size++;
+        if (size==0){
+            add(track);
             return true;
         }
         for (int j = size +1; j>i ; j--){
