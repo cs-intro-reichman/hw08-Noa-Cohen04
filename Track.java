@@ -42,7 +42,14 @@ class Track {
     // Returns a string that represents the totalSeconds as "minutes:seconds",
     // Where seconds is always two digits. For example, "3:17" or "12:05".
     private String formattedDuration(int totalSeconds) {
-        //// replace the following statement with your code
-        return "";
+        int min = 0;
+        int seconds = 0;
+        seconds = totalSeconds%60;
+        min = (totalSeconds - seconds)/60;
+        String secondsString = Integer.toString(seconds);
+        if (seconds<10){
+            secondsString = "0" + Integer.toString(seconds);
+        }
+        return Integer.toString(min) + ":" + secondsString;
     }
 }
