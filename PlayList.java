@@ -148,6 +148,7 @@ class PlayList {
                  counterPlace++;
              }
              size = maxSizeBoth ;
+             size ++;
          }
     }
 
