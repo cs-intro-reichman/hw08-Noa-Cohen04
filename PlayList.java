@@ -95,11 +95,11 @@ class PlayList {
         }
         if (i==0){
             tracks[0] = track;
+            size++;
             return true;
         }
         for (int j = size +1; j>i ; j--){
             tracks[j] = tracks[j-1];
-            
         }
         tracks[i]= track;
         size++;
