@@ -76,6 +76,7 @@ class PlayList {
     public int indexOf(String title) {
         int index = -1;
         for (int i = 0; i<size ; i++){
+            // #feedback - you should ignore upper/lower case.
             if (tracks[i].getTitle().equals(title)){
                 index = i;
             }
